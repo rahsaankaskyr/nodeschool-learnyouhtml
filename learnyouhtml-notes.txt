@@ -1,0 +1,183 @@
+# Learn HTML  
+   
+ ## HELLO WORLD (Exercise 1 of 11)  
+   
+      _                                         _     _             _  
+     | | ___  __ _ _ __ _ __  _   _  ___  _   _| |__ | |_ _ __ ___ | |  
+     | |/ _ \/ _` | '__| '_ \| | | |/ _ \| | | | '_ \| __| '_ ` _ \| |  
+     | |  __/ (_| | |  | | | | |_| | (_) | |_| | | | | |_| | | | | | |  
+     |_|\___|\__,_|_|  |_| |_|\__, |\___/ \__,_|_| |_|\__|_| |_| |_|_|  
+                              |___/  
+   
+  Welcome to learnyouhtml!  
+   
+ ### What is HTML?  
+   
+  HTML or HyperText Markup Language is a markup language for creating  
+  webpages. Webpages are usually viewed in a web browser. They can include  
+  writing, links, pictures, and even sound and video. HTML is used to mark  
+  and describe each of these kinds of content so the web browser can show  
+  them correctly.  
+   
+  HTML can also be used to add meta information to a webpage. Meta  
+  information is information about the web page. For example, the name of  
+  the person who made it. Meta information is not usually shown by web  
+  browsers.  
+   
+  HTML was made by the World Wide Web Consortium (W3C). There are many  
+  versions of HTML. The current standard is HTML5. So, it is the version the  
+  W3C recommends.  
+   
+ ### Why do I need to learn HTML?  
+   
+  HTML is a cornerstone of web. It's what you see in your browser every time  
+  you open a favorite site.  
+   
+  If you're going to work in web development area, then you definitely need  
+  to know what is HTML, how to read it and how to use it.  
+   
+ ### Browser  
+   
+  You need to have a browser — a program to read HTML documents and display  
+  them. There are a lot of them, but we recommend one of these:  
+   
+   » [Google Chrome](https://www.google.com/chrome)                              
+   » [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new)                
+   
+ ### Editor  
+   
+  HTML-document could be created in any text editor, even Notepad.  
+  Nevertheless, it would be better if you will use a special editor with  
+  useful features, like syntax highlighting, tabs, autocompletions, etc.  
+   
+  We recommend you one of these text editors:  
+   
+   » [Atom](https://atom.io)                                                     
+   » [Sublime Text](https://www.sublimetext.com/)                                
+   » [Brackets](http://brackets.io/)                                             
+   
+ ### How to use this workshopper?  
+   
+  This workshopper will guide you through the simple exercises which explain  
+  the core principles of HTML. In most cases, it's enough to use only three  
+  commands:  
+   
+   » learnyouhtml run file.html will serve a local server at                                                                            
+     http://localhost:3000/ with a preview of file.html.                         
+   » learnyouhtml verify file.html will verify your file.                        
+   » learnyouhtml help shows a help message.                                     
+   
+ ## THE CHALLENGE  
+   
+  Create a new empty file called index.html and put these lines in there:  
+   
+     <!DOCTYPE html>  
+     <html>  
+       <head>  
+         <meta charset="utf-8">  
+         <title>Hello, world!</title>  
+       </head>  
+       <body>  
+         here is a body  
+       </body>  
+     </html>  
+   
+  This is your boilerplate for all of next exercises. Everything you're  
+  going to do you'll do with that snippet.  
+   
+  It's okay if you don't understand what is going on. This lines will be  
+  explained in following exercises.  
+   
+  Run learnyouhtml verify to verify your solution or learnyouhtml run to see  
+  the result in the browser.  
+   
+ ─────────────────────────────────────────────────────────────────────────────  
+   
+   » To print these instructions again, run: learnyouhtml print                  
+   » To execute your program, run: learnyouhtml run file.html                    
+   » To verify your program, run: learnyouhtml verify file.html                  
+   » For help run: learnyouhtml help 
+
+
+
+## TAGS (Exercise 2 of 11)  
+   
+  HTML uses special bits of programming language called tags to let the  
+  browser know how a webpage should look. The tags usually come in pairs: an  
+  opening tag to tell the browser when to start doing something, and an  
+  ending tag to tell the browser when to stop doing something. There are  
+  many different kinds of tags, and each one has a different purpose.  
+   
+  Let's think of tags like it's some kind of selection tool in text editors.  
+  In text editor, such as Microsoft Office Word or Writer, if you want to  
+  make text bold you select a part of text and click corresponding button  
+  (b). In HTML, you have tags for that reason.  
+   
+                     ┌── a "selected" text ──┐  
+                     ↓                       ↓  
+     Lorem ipsum <tagname>dolor sit amet</tagname>, consectetur adipisicing elit.  
+   
+  Opening tags have a keyword, such as p, surrounded by angle brackets (<  
+  and >). For example, the tag <p> tells the browser the start a new  
+  paragraph. Ending tags look almost exactly the same, only they have a  
+  forward slash (/) added just before the keyword. For example, the tag </p>  
+  tells the browser to end a paragraph.  
+   
+     <p>this is a paragraph</p>  
+   
+  A small number of tags, like <br>, <img> and <hr>, can be used without an  
+  ending tag. Here is what these tags do:  
+   
+   » <br> - produces a line break in text (carriage-return). It is useful                                                                            
+     for writing a poem or an address, where the division of lines is                                                                            
+     significant.                                                                
+   » <img> — represents an image in the document. We will consider this tag                                                                            
+     later.                                                                      
+   » <hr> — represents a thematic break between paragraph-level elements. In                                                                            
+     previous versions of HTML, it represented a horizontal rule. It may                                                                            
+     still be displayed as a horizontal rule in visual browsers.                 
+   
+  You could use them like this:  
+   
+     <p>first paragraph</p>  
+     <hr>  
+     <p>second paragraph</p>  
+   
+ ### Basic HTML document  
+   
+  In previous exercise you've created a document. Let's consider its  
+  content:  
+   
+     <!DOCTYPE html>  
+     <html>  
+       <head>  
+         <meta charset="utf-8">  
+         <title>Hello, world!</title>  
+       </head>  
+       <body>  
+         here is a body  
+       </body>  
+     </html>  
+   
+  Here we have a <html> tag which wrap whole document — this tag indicates  
+  where the HTML document begins and where it ends.  
+   
+  The HTML document has its own <head> and <body>. In the <head> tag we put  
+  all information about document, like meta-tags and <title>. The content of  
+  the <title> tag will be shown in the browser's title bar when displaying  
+  this document. In the <body> we put everything we want to be drawn in  
+  browser's window: headings, text, images, etc.  
+   
+  Probably, you still have a question: "What does the <meta charset="utf-8">  
+  tag do?" Well, this is a special tag — a meta-tag. Meta-tags are used for  
+  describing a document. It's a bit weird, but keep thinking about meta-tags  
+  as an information about information. Directly, this tag means that we want  
+  to use the utf-8 charset for our document.  
+   
+ ## THE CHALLENGE  
+   
+  You already have an HTML-document. In <body> add two paragraphs (<p>) with  
+  any text you like. Please, separate these two tags with a horizontal rule  
+  (<hr> tag).  
+
+

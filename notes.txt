@@ -1,5 +1,0 @@
-Run learnyouhtml verify to verify your  
-  solution 
-
-learnyouhtml run to see the  
-  result in the browser.  
